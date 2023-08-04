@@ -14,15 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin/dashboard',[
+        "tittle"=>"dashboard"
+    ]);
 });
 Route::get('/login-admin', function () {
     return view('login',[
         "tittle"=>"login-admin"
     ]);
 });
-Route::get('/dashboard', function () {
-    return view('admin/dashboard',[
-        "tittle"=>"dashboard"
-    ]);
-});
+
