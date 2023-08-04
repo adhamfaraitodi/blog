@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('admin/dashboard',[
-        "tittle"=>"dashboard"
+    return view('login',[
+        "tittle"=>"login-admin"
     ]);
 });
 Route::get('/login-admin', function () {
-    return view('login',[
-        "tittle"=>"login-admin"
+    return view('admin/dashboard',[
+        "tittle"=>"dashboard"
     ]);
 });
 
