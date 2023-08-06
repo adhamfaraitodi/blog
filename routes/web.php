@@ -18,7 +18,7 @@ Route::get('/', function () {
         "tittle"=>"login-admin"
     ]);
 });
-Route::get('/login-admin', function () {
+Route::get('/dashboard', function () {
     return view('admin/dashboard',[
         "tittle"=>"dashboard"
     ]);
